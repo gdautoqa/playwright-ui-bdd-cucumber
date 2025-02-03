@@ -34,15 +34,16 @@ jobs:
 
       - name: Run tests
         run: BROWSER=${{ matrix.browser }} npx cucumber-js
+        timeout-minutes: 10
 
       - name: Upload Playwright Report
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.browser }}-${{ github.run_id }}
           path: playwright-report/
 
       - name: Upload Cucumber Report
         uses: actions/upload-artifact@v4
         with:
-          name: cucumber-report
+          name: cucumber-report-${{ matrix.browser }}-${{ github.run_id }}
           path: cucumber-report.html
