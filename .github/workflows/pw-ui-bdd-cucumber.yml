@@ -9,7 +9,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 1-5" 
+    - cron: "0 12 * * 3"  # Run once weekly on Wednesdays at 12 PM UTC
 
 jobs:
   test:
@@ -35,12 +35,6 @@ jobs:
       - name: Run tests
         run: BROWSER=${{ matrix.browser }} npx cucumber-js
         timeout-minutes: 10
-
-      - name: Upload Playwright Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-report-${{ matrix.browser }}-${{ github.run_id }}
-          path: playwright-report/
 
       - name: Upload Cucumber Report
         uses: actions/upload-artifact@v4
