@@ -1,6 +1,6 @@
 # Playwright UI Automation Tests with BDD & Cucumber
 
-This repository contains a series of UI automation tests built with [Playwright] and written using the Behavior Driven Development (BDD) approach with [Cucumber]. The tests target the [the-internet.herokuapp.com](https://the-internet.herokuapp.com) application and make use of the Page Object Model (POM) for maintainability and ease of use.
+This repository contains a series of UI automation tests built with Playwright and written using the Behavior Driven Development (BDD) approach with Cucumber. The tests target the [the-internet.herokuapp.com](https://the-internet.herokuapp.com) application and make use of the Page Object Model (POM) for maintainability and ease of use.
 
 ## Key Features
 
@@ -14,21 +14,10 @@ This repository contains a series of UI automation tests built with [Playwright]
   The POM architecture is used to encapsulate page interactions, leading to well-organized and reusable code.
 
 - **GitHub Actions Integration:**  
-  The tests run via GitHub Actions using a scheduled CRON job (weekdays at 8 AM Eastern Time), ensuring regular test execution. You can also trigger the tests manually through the GitHub Actions interface.
+  The tests run via GitHub Actions using a scheduled CRON job (Wednesdays at 8 AM Eastern Time), ensuring regular test execution. You can also trigger the tests manually through the GitHub Actions interface.
 
 - **Reporting:**  
   After each test run, both Playwright and Cucumber reports are generated and uploaded as artifacts, providing clear insights into test results.
-
-## How It Works
-
-1. **Test Execution:**  
-   Test scenarios are defined in feature files and implemented via step definitions. These steps interact with page objects to perform actions and verify outcomes.
-
-2. **Scheduled Test Runs:**  
-   The GitHub Actions workflow is configured to run tests every weekday at 8 AM Eastern Time using a CRON schedule.
-
-3. **Manual Trigger:**  
-   Besides the scheduled runs, you can manually initiate the test runs directly from the GitHub Actions tab.
 
 ## Getting Started
 
@@ -71,7 +60,7 @@ npm run test
 The project is integrated with GitHub Actions:
 
 - **Scheduled (CRON) Run:**  
-  Tests are automatically triggered every weekday at 8 AM Eastern Time.
+  Tests are automatically triggered every Wednesday at 8 AM Eastern Time.
   
 - **Manual Trigger:**  
   You can manually start a test run from the GitHub Actions tab.
