@@ -1,5 +1,5 @@
 {
-  "name": "playwright-boilerplate",
+  "name": "playwright-ui-bdd-cucumber",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   ],
   "author": "",
   "license": "MIT",
-  "description": "Playwright boilerplate for automation testing",
+  "description": "playwright-ui-bdd-cucumber",
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "axe-core": "^4.10.2",
