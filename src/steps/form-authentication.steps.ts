@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { FormAuthenticationPage } from '../pages/FormAuthentication.page';
+import { FormAuthenticationPage } from '../pages/formAuthenticationPage';
 
 Given('I navigate to the Form Authentication page using the form link', async function () {
   this.formAuthPage = new FormAuthenticationPage(this.page);

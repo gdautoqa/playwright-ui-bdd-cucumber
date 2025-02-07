@@ -1,5 +1,5 @@
 import { When, Then } from '@cucumber/cucumber';
-import { MultipleWindowsPage } from '../pages/MultipleWindows.page';
+import { MultipleWindowsPage } from '../pages/multipleWindowsPage';
 import { expect } from '@playwright/test';
 
 When('I navigate to the "Multiple Windows" page', async function() {

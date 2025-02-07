@@ -1,6 +1,6 @@
 import { setWorldConstructor, Before, After } from '@cucumber/cucumber';
 import { chromium, Browser, BrowserContext, Page } from 'playwright';
-import { DynamicLoadingPage } from '../pages/DynamicLoading.page';
+import { DynamicLoadingPage } from '../pages/dynamicLoadingPage';
 
 export class CustomWorld {
   browser!: Browser;

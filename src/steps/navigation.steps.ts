@@ -1,9 +1,9 @@
 import { When } from '@cucumber/cucumber';
-import HorizontalSliderPage from '../pages/HorizontalSlider';
-import HoversPage from '../pages/Hovers';
-import JavaScriptAlertsPage from '../pages/JavaScriptAlerts';
-import KeyPressesPage from '../pages/KeyPresses';
-import { SortableDataTablesPage } from '../pages/SortableDataTables.page';
+import HorizontalSliderPage from '../pages/horizontalSliderPage';
+import HoversPage from '../pages/hoversPage';
+import JavaScriptAlertsPage from '../pages/javaScriptAlertsPage';
+import KeyPressesPage from '../pages/keyPressesPage';
+import { SortableDataTablesPage } from '../pages/sortableDataTablesPage';
 
 When('I navigate to the generic {string} page', async function (pageName: string) {
   const urlMap: { [key: string]: string } = {

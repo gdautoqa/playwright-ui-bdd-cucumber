@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import KeyPressesPage from '../pages/KeyPresses';
+import KeyPressesPage from '../pages/keyPressesPage';
 import { expect } from '@playwright/test';
 
 Given('I am on the Key Presses page', async function () {

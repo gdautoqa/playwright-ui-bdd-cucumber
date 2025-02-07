@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { DropdownPage } from '../pages/Dropdown.page';
+import { DropdownPage } from '../pages/dropdownPage';
 
 Given('I navigate to the dropdown page', async function () {
   const dropdownPage = new DropdownPage(this.page);

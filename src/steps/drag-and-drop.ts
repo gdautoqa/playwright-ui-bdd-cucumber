@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { DragAndDropPage } from '../pages/DragAndDrop.page';
+import { DragAndDropPage } from '../pages/dragAndDropPage';
 
 Given('I navigate to the drag and drop page', async function () {
   const dragAndDropPage = new DragAndDropPage(this.page);
