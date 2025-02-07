@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import { ShiftingContentPage } from '../pages/ShiftingContent.page';
+import { ShiftingContentPage } from '../pages/shiftingContentPage';
 import { expect } from '@playwright/test';
 
 Given('I am on the Shifting Content page', async function () {

@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect, Dialog } from '@playwright/test';
-import { ContextMenuPage } from '../pages/ContextMenu.page';
+import { ContextMenuPage } from '../pages/contextMenuPage';
 
 Given('I navigate to the context menu page', async function () {
   const contextMenuPage = new ContextMenuPage(this.page);

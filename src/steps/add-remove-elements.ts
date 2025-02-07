@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { AddRemoveElementsPage } from '../pages/AddRemoveElements.page';
+import { AddRemoveElementsPage } from '../pages/addRemoveElementsPage';
 
 Given('I navigate to the add remove elements page', async function () {
   const addRemovePage = new AddRemoveElementsPage(this.page);

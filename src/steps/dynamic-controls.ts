@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { DynamicControlsPage } from '../pages/DynamicControls.page';
+import { DynamicControlsPage } from '../pages/dynamicControlsPage';
 
 Given('I navigate to the dynamic controls page', async function () {
   const dynamicControlsPage = new DynamicControlsPage(this.page);

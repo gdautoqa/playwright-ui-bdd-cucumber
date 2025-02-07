@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { DynamicLoadingPage } from '../pages/DynamicLoading.page';
+import { DynamicLoadingPage } from '../pages/dynamicLoadingPage';
 
 Given('I am on the dynamic loading page', async function () {
   this.dynamicLoadingPage = new DynamicLoadingPage(this.page);

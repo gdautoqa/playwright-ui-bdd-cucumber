@@ -1,6 +1,6 @@
 import { When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import HoversPage from '../pages/Hovers';
+import HoversPage from '../pages/hoversPage';
 
 When('I click on the "Hovers" link', async function () {
   this.hoversPage = new HoversPage(this.page);

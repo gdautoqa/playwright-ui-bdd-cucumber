@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { CheckboxesPage } from '../pages/Checkboxes.page';
+import { CheckboxesPage } from '../pages/checkboxesPage';
 
 Given('I navigate to the checkboxes page', async function () {
   const checkboxesPage = new CheckboxesPage(this.page);

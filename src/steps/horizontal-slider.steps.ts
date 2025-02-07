@@ -1,5 +1,5 @@
 import { When, Then, Given } from '@cucumber/cucumber';
-import HorizontalSliderPage from '../pages/HorizontalSlider'
+import HorizontalSliderPage from '../pages/horizontalSliderPage'
 import { expect } from '@playwright/test';
 
 Given('I am on the Horizontal Slider page', async function () {

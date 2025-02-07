@@ -1,6 +1,6 @@
 import { Given, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { DigestAuthenticationPage } from '../pages/DigestAuthentication.page';
+import { DigestAuthenticationPage } from '../pages/digestAuthenticationPage';
 
 Given('I navigate to the digest authentication page', async function () {
   this.digestAuthPage = new DigestAuthenticationPage(this.page);

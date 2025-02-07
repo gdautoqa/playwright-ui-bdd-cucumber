@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import { FileUploadPage } from '../pages/FileUpload.page';
+import { FileUploadPage } from '../pages/fileUploadPage';
 import path from 'path';
 import { expect } from '@playwright/test';
 

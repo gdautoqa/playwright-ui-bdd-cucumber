@@ -1,6 +1,6 @@
 import { When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { SortableDataTablesPage } from '../pages/SortableDataTables.page';
+import { SortableDataTablesPage } from '../pages/sortableDataTablesPage';
 
 When('I click on the "Sortable Data Tables" link', async function () {
   this.sortableDataTablesPage = new SortableDataTablesPage(this.page);

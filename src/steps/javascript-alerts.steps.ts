@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import JavaScriptAlertsPage from '../pages/JavaScriptAlerts';
+import JavaScriptAlertsPage from '../pages/javaScriptAlertsPage';
 import { expect } from '@playwright/test';
 
 Given('I am on the JavaScript Alerts page', async function () {
