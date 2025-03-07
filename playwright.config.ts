@@ -7,6 +7,7 @@ export default defineConfig({
   expect: {
     timeout: 5000,
   },
+  captureGitInfo: { diff: true},
   fullyParallel: true,
   retries: 1,
   reporter: [['html', { outputFolder: 'playwright-report' }]],
