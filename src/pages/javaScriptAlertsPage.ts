@@ -17,7 +17,7 @@ export default class JavaScriptAlertsPage {
 
   async clickJsAlert(): Promise<string> {
     return new Promise<string>(async (resolve) => {
-      this.page.once('dialog', async dialog => {
+      this.page.once('dialog', async (dialog) => {
         const message = dialog.message();
         await dialog.accept();
         resolve(message);
@@ -28,7 +28,7 @@ export default class JavaScriptAlertsPage {
 
   async clickJsConfirm(): Promise<string> {
     return new Promise<string>(async (resolve) => {
-      this.page.once('dialog', async dialog => {
+      this.page.once('dialog', async (dialog) => {
         const message = dialog.message();
         await dialog.accept();
         resolve(message);
@@ -39,7 +39,7 @@ export default class JavaScriptAlertsPage {
 
   async clickJsPrompt(): Promise<string> {
     return new Promise<string>(async (resolve) => {
-      this.page.once('dialog', async dialog => {
+      this.page.once('dialog', async (dialog) => {
         const message = dialog.message();
         await dialog.accept();
         resolve(message);

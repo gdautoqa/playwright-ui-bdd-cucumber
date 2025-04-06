@@ -23,7 +23,7 @@ This repository contains a series of UI automation tests built with Playwright a
 
 ### Prerequisites
 
-- Node.js 
+- Node.js
 - npm or yarn
 
 ### Installation
@@ -61,7 +61,6 @@ The project is integrated with GitHub Actions:
 
 - **Scheduled (CRON) Run:**  
   Tests are automatically triggered every Wednesday at 8 AM Eastern Time.
-  
 - **Manual Trigger:**  
   You can manually start a test run from the GitHub Actions tab.
 

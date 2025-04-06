@@ -23,7 +23,7 @@ export class MultipleWindowsPage {
   async clickClickHereLink() {
     const [newPage] = await Promise.all([
       this.page.context().waitForEvent('page'),
-      this.clickHereLink.click()
+      this.clickHereLink.click(),
     ]);
     await newPage.waitForLoadState();
     return newPage;

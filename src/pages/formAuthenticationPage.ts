@@ -34,7 +34,9 @@ export class FormAuthenticationPage {
   }
 
   async assertWelcomeMessage() {
-    await expect(this.flashMessage).toContainText('You logged into a secure area!');
+    await expect(this.flashMessage).toContainText(
+      'You logged into a secure area!',
+    );
   }
 
   async logout() {

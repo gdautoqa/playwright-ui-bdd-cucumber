@@ -8,7 +8,9 @@ export class DigestAuthenticationPage {
   }
 
   async navigate() {
-    await this.page.goto('https://admin:admin@the-internet.herokuapp.com/digest_auth');
+    await this.page.goto(
+      'https://admin:admin@the-internet.herokuapp.com/digest_auth',
+    );
     await this.page.waitForLoadState('load');
   }
 

@@ -9,8 +9,12 @@ export class DynamicLoadingPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.example1Link = page.locator('text=Example 1: Element on page that is hidden');
-    this.example2Link = page.locator('text=Example 2: Element rendered after the fact');
+    this.example1Link = page.locator(
+      'text=Example 1: Element on page that is hidden',
+    );
+    this.example2Link = page.locator(
+      'text=Example 2: Element rendered after the fact',
+    );
     this.startButton = page.locator('button');
     this.helloWorldText = page.locator('text=Hello World!');
   }

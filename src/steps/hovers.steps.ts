@@ -23,11 +23,14 @@ When('I hover over the third image', async function () {
   this.lastHoveredIndex = 2;
 });
 
-Then('I should see the text {string} displayed', async function (expectedText: string) {
-  const userNumber = expectedText.match(/user(\d)/)?.[1];
-  if (!userNumber) throw new Error('Invalid user text format');
-  
-  const index = parseInt(userNumber) - 1;
-  const caption = await this.hoversPage.getCaptionForImage(index);
-  expect(caption).toContain(expectedText);
-});
+Then(
+  'I should see the text {string} displayed',
+  async function (expectedText: string) {
+    const userNumber = expectedText.match(/user(\d)/)?.[1];
+    if (!userNumber) throw new Error('Invalid user text format');
+
+    const index = parseInt(userNumber) - 1;
+    const caption = await this.hoversPage.getCaptionForImage(index);
+    expect(caption).toContain(expectedText);
+  },
+);

@@ -30,10 +30,10 @@ export class SortableDataTablesPage {
   async getDueColumnValues(): Promise<number[]> {
     const cells = await this.dueColumnCells.all();
     const values = await Promise.all(
-      cells.map(async cell => {
-        const text = await cell.textContent() || '';
+      cells.map(async (cell) => {
+        const text = (await cell.textContent()) || '';
         return parseFloat(text.replace('$', '').replace(',', ''));
-      })
+      }),
     );
     return values;
   }
@@ -46,7 +46,7 @@ export class SortableDataTablesPage {
   async getLastNameColumnValues(): Promise<string[]> {
     const cells = await this.lastNameColumnCells.all();
     return Promise.all(
-      cells.map(async cell => (await cell.textContent() || '').trim())
+      cells.map(async (cell) => ((await cell.textContent()) || '').trim()),
     );
   }
 

@@ -25,6 +25,9 @@ When('I right click on the hot spot', async function () {
   this.dialogMessage = await dialogPromise;
 });
 
-Then('I should see an alert with message {string}', async function (expectedMessage: string) {
-  expect(this.dialogMessage).toBe(expectedMessage);
-});
+Then(
+  'I should see an alert with message {string}',
+  async function (expectedMessage: string) {
+    expect(this.dialogMessage).toBe(expectedMessage);
+  },
+);

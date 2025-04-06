@@ -9,7 +9,9 @@ Given('I navigate to the digest authentication page', async function () {
 
 Then('I should be on the digest authentication page', async function () {
   const url = await this.page.url();
-  expect(url).toMatch(/https:\/\/(admin:admin@)?the-internet\.herokuapp\.com\/digest_auth/);
+  expect(url).toMatch(
+    /https:\/\/(admin:admin@)?the-internet\.herokuapp\.com\/digest_auth/,
+  );
 });
 
 Then('I should see a confirmation message', async function () {

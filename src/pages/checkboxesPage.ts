@@ -13,7 +13,9 @@ export class CheckboxesPage {
   }
 
   async getCheckboxStates(): Promise<boolean[]> {
-    const checkboxes = this.page.locator('form#checkboxes input[type="checkbox"]');
+    const checkboxes = this.page.locator(
+      'form#checkboxes input[type="checkbox"]',
+    );
     const count = await checkboxes.count();
     const states: boolean[] = [];
     for (let i = 0; i < count; i++) {
@@ -23,6 +25,9 @@ export class CheckboxesPage {
   }
 
   async toggleCheckbox(index: number): Promise<void> {
-    await this.page.locator('form#checkboxes input[type="checkbox"]').nth(index).click();
+    await this.page
+      .locator('form#checkboxes input[type="checkbox"]')
+      .nth(index)
+      .click();
   }
 }

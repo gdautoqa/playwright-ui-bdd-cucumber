@@ -31,7 +31,7 @@ export default [
       'playwright/no-wait-for-timeout': 'error',
       'playwright/no-wait-for-selector': 'error',
       'playwright/no-pause': 'off',
-      'prettier/prettier': 'warn'    
+      'prettier/prettier': 'warn',
     },
   },
 ];

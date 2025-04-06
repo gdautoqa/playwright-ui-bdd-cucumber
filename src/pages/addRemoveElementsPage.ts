@@ -9,7 +9,9 @@ export class AddRemoveElementsPage {
 
   async navigate() {
     await this.page.goto('https://the-internet.herokuapp.com/');
-    await this.page.goto('https://the-internet.herokuapp.com/add_remove_elements/');
+    await this.page.goto(
+      'https://the-internet.herokuapp.com/add_remove_elements/',
+    );
   }
 
   async clickAddElement() {

@@ -20,17 +20,22 @@ export class FileDownloadPage {
   }
 
   async downloadFile(fileName: string): Promise<void> {
-    const downloadsFolder = path.join(process.cwd(), 'src', 'utils', 'downloads');
-    
+    const downloadsFolder = path.join(
+      process.cwd(),
+      'src',
+      'utils',
+      'downloads',
+    );
+
     if (!fs.existsSync(downloadsFolder)) {
       fs.mkdirSync(downloadsFolder, { recursive: true });
     }
-    
+
     const [download] = await Promise.all([
       this.page.waitForEvent('download'),
-      this.page.click(`a[href*="${fileName}"]`)
+      this.page.click(`a[href*="${fileName}"]`),
     ]);
-    
+
     const filePath = path.join(downloadsFolder, fileName);
     await download.saveAs(filePath);
   }

@@ -6,10 +6,13 @@ import path from 'path';
 
 const downloadsFolder = path.join(process.cwd(), 'src', 'utils', 'downloads');
 
-Given('I navigate to the File Download page using the download link', async function () {
-  this.fileDownloadPage = new FileDownloadPage(this.page);
-  await this.fileDownloadPage.navigateToFileDownloadPage();
-});
+Given(
+  'I navigate to the File Download page using the download link',
+  async function () {
+    this.fileDownloadPage = new FileDownloadPage(this.page);
+    await this.fileDownloadPage.navigateToFileDownloadPage();
+  },
+);
 
 When('I download the file "s.txt"', async function () {
   await this.fileDownloadPage.downloadFile('s.txt');

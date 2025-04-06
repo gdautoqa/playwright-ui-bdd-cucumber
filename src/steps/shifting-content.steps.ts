@@ -9,18 +9,21 @@ Given('I am on the Shifting Content page', async function () {
   await shiftingContent.navigateToShiftingContent();
 });
 
-When('I click the shifting content example {string}', async function (example: string) {
-  const shiftingContent = this.shiftingContentPage;
-  if (example === 'Example 1: Menu Element') {
-    await shiftingContent.clickExample1MenuElement();
-  } else if (example === 'Example 2: An image') {
-    await shiftingContent.clickExample2Image();
-  } else if (example === 'Example 3: List') {
-    await shiftingContent.clickExample3List();
-  } else {
-    throw new Error(`Unknown example: ${example}`);
-  }
-});
+When(
+  'I click the shifting content example {string}',
+  async function (example: string) {
+    const shiftingContent = this.shiftingContentPage;
+    if (example === 'Example 1: Menu Element') {
+      await shiftingContent.clickExample1MenuElement();
+    } else if (example === 'Example 2: An image') {
+      await shiftingContent.clickExample2Image();
+    } else if (example === 'Example 3: List') {
+      await shiftingContent.clickExample3List();
+    } else {
+      throw new Error(`Unknown example: ${example}`);
+    }
+  },
+);
 
 Then('I should see all menu elements shifting on hover', async function () {
   const menuItems = this.page.locator('ul li');

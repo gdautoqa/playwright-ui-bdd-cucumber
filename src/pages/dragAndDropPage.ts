@@ -13,7 +13,7 @@ export class DragAndDropPage {
     await this.page.waitForLoadState('load');
   }
 
-  async getColumnHeaders(): Promise<{ columnA: string, columnB: string }> {
+  async getColumnHeaders(): Promise<{ columnA: string; columnB: string }> {
     const columnAHeader = await this.page.textContent('#column-a header');
     const columnBHeader = await this.page.textContent('#column-b header');
     return {
